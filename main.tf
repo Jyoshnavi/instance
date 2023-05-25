@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-016b213e65284e9c9"
-  instance_type = "t3.micro"
+  ami           = "ami-01107263728f3bef4"
+  instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "My First Jenkins with Terraform"
   }
 }
